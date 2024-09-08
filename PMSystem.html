@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Parking Lot Management System</h1>
+    </header>
+
+    <div class="registration-form">
+        <h2>Register Your Vehicle</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleName">Vehicle Name:</label>
+                <input type="text" id="vehicleName" name="vehicleName">
+            </div>
+
+            <div class="form-group">
+                <label for="vehicleNumber">Vehicle Number:</label>
+                <input type="text" id="vehicleNumber" name="vehicleNumber">
+            </div>
+
+            <div class="form-group">
+                <label for="entryDate">Entry Date:</label>
+                <input type="datetime-local" id="entryDate" name="entryDate">
+            </div>
+
+            <div class="form-group">
+                <label for="exitDate">Exit Date:</label>
+                <input type="datetime-local" id="exitDate" name="exitDate">
+            </div>
+
+            <button type="button" id="saveButton">Save</button>
+        </form>
+    </div>
+
+    <h2>Cars in the Parking Lot</h2>
+    <table id="parkingTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Vehicle Name</th>
+                <th>Vehicle Number</th>
+                <th>Entry Date</th>
+                <th>Exit Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
